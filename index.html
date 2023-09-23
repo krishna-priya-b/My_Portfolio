@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/ab9e253226.js" crossorigin="anonymous"></script>
+    <!--Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--add favicon -->
+    <title>Krishna Priya</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl fixed-top py-0 bg-gradient nav-colour">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./images/k-white-transparent-background.png" class="nav-logo-k" id="nav-logo" alt="k"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav-container-spl" id="navbarSupportedContent">
+            <div class="nav-item padding-nav">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item padding-nav">
+                  <a class="nav-link text-light" href="#projects"><span class="navbar-icon">Projects</span> </a>
+                 </li>
+                <li class="nav-item padding-nav">
+                  <a class="nav-link text-light" href="#aboutme"><span class="navbar-icon">About</span></a>
+                 </li>
+                <li class="nav-item padding-nav">
+                  <a class="nav-link text-light" href="#"><span class="navbar-icon">Resume</span></a>
+                </li>
+                <li class="nav-item padding-nav">
+                  <a class="nav-link text-light" href="#contact"><span class="navbar-icon">Contact</span></a>
+                </li>
+                <li class="nav-item padding-nav">
+                  <a class="nav-link text-light" href="#"><span class="navbar-icon">Github</span></a>
+                </li> 
+                <li class="nav-item padding-nav">
+                  <a class="nav-link text-light" href="#"><span class="navbar-icon">Linkdin</span></a>
+                </li>              
+              </ul>
+            </div> 
+          </div>
+        </div>
+      </nav>
+    <section id="hello">
+        <div id="hellow-div" class="middle-div">
+            <div>
+                <h1 class="text-light">Hello..!</h1>
+                <h2 class="text-light">My name is <span class="my-name">Krishna Priya</span></h2>
+                <h3 class="text-light">I am a full-stack web developer</h3>
+                <br>
+                <a href="#viewmywork" class="btn-spl btn-hover bg-gradient"><b>View my work</b></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="padding-add">
+        <h2 class="text-light">Projects</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+                  <div class="card projects">
+                    <img src="./images/apple.png" class="card-img-bottom" alt="Apple website clone">
+                  </div>
+            </div>
+            <div class="col-md-6">
+                  <div class="card projects">
+                    <img src="./images/coffee.png" class="card-img-bottom" alt="Backery website">
+                  </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="aboutme" class="padding-add">
+      <div class="mb-3 aboutme-div">
+        <h2 class="text-light">About Me</h2>
+        <div class="row g-0">
+          <div class="col-md-4 my-img-div">
+            <img src="./images/photo_me.png" class="img-fluid rounded-circle my-img" alt="it's me">
+          </div>
+          <div class="col-md-8">
+            <div class="aboutme-content">
+              <p class="text-light">Hi! I’m Krishna Priya, a full-stack web developer. </p>
+              <p class="text-light">After working as a Mathematics teacher for almost 5 years, I decided to embark on an exciting journey into web development through Entri- Elevate Full Stack Development course.</p>
+              <p class="text-light">Fast forward to today, having proudly earned my certification, I can confidently say that diving into this coding boot camp was a game-changer. I thrive on soaking up new technologies and infusing my creativity to craft extraordinary things.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="padding-add">       
+      <form name="contact-form"
+      action="https://script.google.com/macros/s/AKfycbzZjSVN7jgKHchRBwAkfAy1lGDVaSXMS7D5a6WNsET63EZyu87oN_Azrwu5M04CZ0VQeA/exec" 
+      onsubmit="return validateAll()" 
+      method="post">
+
+        <h2 class="text-light">Contact Me</h2>
+
+        <div class="form-div">
+          <input type="text" id="name" name="name" class="form-input" placeholder="Your Name">
+          <span id="name-varifiy" class="form-span"></span>
+        </div>
+
+        <div class="form-div">
+          <input type="text" id="phone" name="phone" class="form-input" placeholder="Phone Number">
+          <span id="phone-varifiy" class="form-span"></span>
+        </div>
+
+        <div class="form-div">
+          <input type="text" id="email" name="email" class="form-input" placeholder="Email ID">
+          <span id="email-varifiy" class="form-span"></span>
+        </div>
+
+        <div class="form-div">
+          <textarea name="message" id="message" rows="10" class="form-input" placeholder="Message"></textarea>
+          <span id="message-varifiy" class="form-span"></span>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <Footer id="footer">
+        <div class="links">
+          <a href="https://www.linkedin.com/in/krishnanairpb/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
+          <a href="https://github.com/krishna-priya-b" target="_blank"><i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff;"></i></a>
+        </div>
+        <div class="mailid">
+          <a href="mailto:krishna.nair.pb@gmail.com" target="_blank" style="text-decoration: none; color: #ffffff;">krishna.nair.pb@gmail.com</a>
+        </div>
+        <p class="text-light">&#169; 2023 Krishna Priya B</p>
+    </Footer>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
